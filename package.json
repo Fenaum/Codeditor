@@ -1,0 +1,26 @@
+{
+  "name": "JATE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "build": "webpack --config ./client/webpack.config.js --mode production",
+    "install": "",
+    "client": "webpack-dev-server --config ./client/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
